@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modo Claro/Escuro</title>
+
+  <style>
+    /* Modo Claro (padrao) */
+    body {
+      background-color: white; /* fundo branco */
+      color: black;            /* texto preto */
+    }
+
+    /* Modo Escuro */
+    body.escuro {
+      background-color: black; /* fundo preto */
+      color: white;            /* texto branco */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Modo Claro/Escuro</h1>
+
+  <button onclick="trocarTema()">Trocar Tema</button>
+
+  <script>
+    function trocarTema() {
+      // se o body tiver a classe "escuro", remove. Se nao tiver, adiciona.
+      document.body.classList.toggle('escuro');
+    }
+  </script>
+</body>
+</html>
